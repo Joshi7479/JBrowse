@@ -1,7 +1,7 @@
 # JBrowse
 A free, opensource Android (other Versions are planned) browser with an minimalistic Design, but colorfull!.
 
-Based on Mozilla‘s Gecko Engine.
+Based on Chromium.
 
 Please notice, that this App is not and will not be available on the Google Play store. So you have to sideload it.
 
