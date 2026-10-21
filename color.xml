@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:gravity="center">
+
+    <View
+        android:id="@+id/colorPreview"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_marginBottom="24dp"
+        android:background="#CCCCCC" />
+
+    <EditText
+        android:id="@+id/colorInput"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Hex-Code eingeben (z.B. #FF5733)"
+        android:inputType="textCapCharacters"
+        android:maxLength="7" />
+
+    <Button
+        android:id="@+id/applyColorButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Farbe anwenden"
+        android:layout_marginTop="16dp" />
+
+    <Button
+        android:id="@+id/close"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:text="Done!" />
+
+</LinearLayout>
