@@ -82,7 +82,6 @@ class MainActivity : AppCompatActivity() {
             try {
                 val preferences = dataStore.data.first()
 
-                // 1. Suchmaschine zuweisen
                 val gespeicherteUrl = preferences[MEIN_STRING_KEY]
                 if (!gespeicherteUrl.isNullOrEmpty()) {
                     standart_suchmaschine_url = gespeicherteUrl
@@ -98,7 +97,7 @@ class MainActivity : AppCompatActivity() {
                     }
                 }
             } catch (e: Exception) {
-                Toast.makeText(this@MainActivity, "Fehler beim Laden", Toast.LENGTH_SHORT).show()
+                Toast.makeText(this@MainActivity, "Using standart theme!", Toast.LENGTH_SHORT).show()
             } finally {
                 webView.loadUrl(standart_suchmaschine_url)
             }

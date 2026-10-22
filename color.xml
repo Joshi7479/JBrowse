@@ -2,12 +2,25 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:orientation="vertical"
-    android:padding="16dp"
-    android:gravity="center">
+    android:orientation="vertical">
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_gravity="center"
+        android:textSize="18sp"
+        android:layout_height="wrap_content"
+        android:text="\nPORTA-Browser: Color-Theme"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="\n\n\n\n\n\n\n"/>
+
 
     <View
         android:id="@+id/colorPreview"
+        android:layout_gravity="center"
         android:layout_width="150dp"
         android:layout_height="150dp"
         android:layout_marginBottom="24dp"
@@ -15,21 +28,31 @@
 
     <EditText
         android:id="@+id/colorInput"
+        android:layout_gravity="center"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:hint="Hex-Code eingeben (z.B. #FF5733)"
+        android:hint="Enter HEx-Code (e.g. #D0BCFF)"
         android:inputType="textCapCharacters"
         android:maxLength="7" />
+    <Button
+        android:id="@+id/reset"
+        android:layout_gravity="center"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Reset" />
+
 
     <Button
         android:id="@+id/applyColorButton"
+        android:layout_gravity="center"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Farbe anwenden"
+        android:text="Apply Color"
         android:layout_marginTop="16dp" />
 
     <Button
         android:id="@+id/close"
+        android:layout_gravity="center"
         android:layout_width="match_parent"
         android:layout_height="50dp"
         android:text="Done!" />

@@ -60,8 +60,8 @@ class ColorActivity : AppCompatActivity() {
                 saveColorToDataStore(formattedHex)
 
             } catch (e: IllegalArgumentException) {
-                colorInput.error = "Falscher Hex-Code!"
-                Toast.makeText(this, "Bitte nutze einen gültigen Hex-Code!", Toast.LENGTH_SHORT).show()
+                colorInput.error = "Wrong Hex-Code!"
+                Toast.makeText(this, "Please use an real Hex-Code!", Toast.LENGTH_SHORT).show()
             }
         }
 
@@ -70,6 +70,11 @@ class ColorActivity : AppCompatActivity() {
             val intent = Intent(this, Settings::class.java)
             startActivity(intent)
             finish()
+        }
+        findViewById<Button>(R.id.reset).setOnClickListener {
+            val resetcolor = AndroidColor.parseColor("#800080")
+            saveColorToDataStore("800080")
+            colorPreview.setBackgroundColor(800080)
         }
     }
 
@@ -80,9 +85,9 @@ class ColorActivity : AppCompatActivity() {
                 dataStore.edit { preferences ->
                     preferences[USER_COLOR_KEY] = color
                 }
-                Toast.makeText(this@ColorActivity, "Farbe erfolgreich gespeichert!", Toast.LENGTH_SHORT).show()
+                Toast.makeText(this@ColorActivity, "Color saved!", Toast.LENGTH_SHORT).show()
             } catch (e: Exception) {
-                Toast.makeText(this@ColorActivity, "Fehler beim Speichern der Farbe!", Toast.LENGTH_SHORT).show()
+                Toast.makeText(this@ColorActivity, "Something went wrong...", Toast.LENGTH_SHORT).show()
             }
         }
     }

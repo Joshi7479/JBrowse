@@ -7,20 +7,49 @@
     android:orientation="vertical">
 
     <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_gravity="center"
+            android:textSize="18sp"
+            android:layout_height="wrap_content"
+            android:text="\nPORTA-Browser: Settings"/>
+
+    </LinearLayout>
+
+    <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="100dp"
         android:orientation="horizontal">
 
+
+
+        <Button
+            android:id="@+id/keyboard"
+            android:layout_width="wrap_content"
+            android:layout_weight="1"
+            android:layout_height="40dp"
+            android:text="⌨" />
         <EditText
             android:id="@+id/test"
-            android:layout_width="match_parent"
+            android:layout_width="280dp"
             android:layout_height="50dp"
             android:layout_alignParentBottom="true"
-            android:layout_weight="1"
-            android:hint="SearchEngine (e.g. https://duckduckgo.com)"
+            android:hint="SearchEngine (e.g. https://().com)"
             android:imeOptions="actionGo"
             android:inputType="textUri"
             android:singleLine="true" />
+        <Button
+            android:id="@+id/save"
+            android:layout_width="wrap_content"
+            android:layout_weight="1"
+            android:layout_height="40dp"
+            android:text="💾" />
+
 
 
 
@@ -28,21 +57,63 @@
     </LinearLayout>
 
     <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
         android:orientation="vertical">
+
+
+
+
+
+        <Button
+            android:id="@+id/reset"
+            android:layout_width="match_parent"
+            android:layout_gravity="center"
+            android:layout_height="50dp"
+            android:text="Reset search engine to SearXNG" />
+
+        <Button
+            android:id="@+id/ddg"
+            android:layout_width="match_parent"
+            android:layout_gravity="center"
+            android:layout_height="50dp"
+            android:text="Use DuckDuckGo instaed" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="\n"/>
 
         <Button
             android:id="@+id/color"
             android:layout_width="match_parent"
+            android:layout_gravity="center"
             android:layout_height="50dp"
-            android:text="Color" />
+            android:text="Color-Theme" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="\n"/>
+
+
+
+
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:orientation="horizontal">
 
         <Button
             android:id="@+id/close"
             android:layout_width="match_parent"
+            android:layout_gravity="center"
             android:layout_height="50dp"
             android:text="Done!" />
+
 
     </LinearLayout>
 </LinearLayout>
