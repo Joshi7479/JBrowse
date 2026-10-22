@@ -15,5 +15,5 @@ This update is not an OS update but an google-play-services-update. This Updates
 
 But: If you use an VM like Waydroid, you can use install it, if you don‘t install thise services. Same for Custom-Roms like Lineage OS or Graphene OS!
 
-JBrowse
+Porta-Browser
 Made by Joshi7479
