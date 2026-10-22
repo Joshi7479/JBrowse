@@ -1,4 +1,4 @@
-# JBrowse
+# Porta-Browser
 A free, opensource Android (other Versions are planned) browser with an minimalistic Design, but colorfull!.
 
 Based on Chromium.
